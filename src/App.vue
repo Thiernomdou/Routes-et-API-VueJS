@@ -1,19 +1,16 @@
 <template>
   <div id="app">
-    <contenu></contenu>
     <header-top></header-top>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 
-import Contenu from './components/Contenu.vue'
-import Header from './components/Header.vue'
-
+import Header from './components/Header'
 export default {
   name: 'App',
   components: {
-    'contenu': Contenu,
     'header-top': Header
   }
 }
